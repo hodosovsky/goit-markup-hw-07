@@ -1,0 +1,33 @@
+.clients {
+  &-list {
+    @extend %list;
+    display: flex;
+  }
+
+  &__item + &__item {
+    margin-left: 30px;
+  }
+  &__link {
+    @extend %link;
+    display: block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--icons-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+
+    color: var(--icons-color);
+
+    transition: color 250ms var(--default-transition), border-color 250ms var(--default-transition),
+      border-color 250ms var(--default-transition), border-color 250ms var(--default-transition);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
