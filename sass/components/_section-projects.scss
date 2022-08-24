@@ -2,6 +2,7 @@
   padding-top: 0;
 
   &__list {
+    @extend %list;
     display: flex;
   }
   &__overlay {
