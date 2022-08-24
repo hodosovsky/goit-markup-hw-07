@@ -49,8 +49,8 @@
 
 .join-network__link {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  fill: #ffffff;
+  color: var(--button-text-color);
+  fill: var(--button-text-color);
 }
 
 .join {
@@ -114,6 +114,7 @@
   }
 
   &__button {
+    @extend .button;
     position: relative;
     width: 200px;
     margin-left: 12px;

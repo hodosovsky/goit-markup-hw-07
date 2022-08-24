@@ -17,7 +17,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
     <!-- Хедер -->
@@ -506,7 +505,7 @@
                   placeholder="E-mail"
                 />
               </label>
-              <button type="submit" class="button subscribe__button">Підписатися</button>
+              <button type="submit" class="subscribe__button">Підписатися</button>
             </div>
           </form>
         </div>
@@ -514,8 +513,8 @@
     </footer>
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="close-modal">
-          <svg width="18" height="18" class="close-modal-icon">
+        <button data-modal-close class="modal-close">
+          <svg width="18" height="18" class="close-modal__icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
@@ -554,16 +553,22 @@
             <label for="comment" class="form-label">Коментар</label>
           </div>
           <div class="policy-field">
-            <label class="policy-label">
-              <input class="checkbox" type="checkbox" name="policy" checked="checked" required />
-              <span class="policy-icon"></span>
-              <span class="policy-text">Погоджуюся з розсилкою та приймаю&nbsp;</span>
+            <label class="form-policy__label">
+              <input
+                class="form-checkbox"
+                type="checkbox"
+                name="policy"
+                checked="checked"
+                required
+              />
+              <span class="form-policy__icon"></span>
+              <span class="form-policy__text">Погоджуюся з розсилкою та приймаю&nbsp;</span>
 
-              <a class="policy-link link" href="#">Умови договору</a>
+              <a class="form-policy__link" href="#">Умови договору</a>
             </label>
           </div>
 
-          <button type="submit" class="form-button button">Відправити</button>
+          <button type="submit" class="form-button">Відправити</button>
         </form>
       </div>
     </div>
