@@ -13,6 +13,8 @@
   }
 }
 .header__logo {
+  @extend %link;
+    @extend %logo;
   padding-top: 24px;
   padding-bottom: 25px;
 }

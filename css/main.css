@@ -46,6 +46,23 @@
   --default-transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio, .filter, .adress-list, .clients-list, .team-list, .projects__list, .features-list, .social-networks, .header-contacts, .header-navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio__link, .adress-list__link, .footer__logo, .clients__link, .form-policy__link, .social-network-link, .header-contacts__link, .header-navigation__link, .header__logo {
+  text-decoration: none;
+}
+
+.footer__logo, .header__logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--logo-web-color);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
@@ -91,40 +108,6 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
-
-.portfolio, .filter, .adress-list, .clients-list, .team-list, .projects__list, .features-list, .social-networks, .header-contacts, .header-navigation__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.portfolio__link, .adress-list__link, .footer__logo, .clients__link, .form-policy__link, .social-network-link, .logo, .header-contacts__link, .header-navigation__link {
-  text-decoration: none;
-}
-
-.button, .subscribe__button, .form-button {
-  display: flex;
-  display: inline-block;
-  align-items: center;
-  width: 216px;
-  height: 50px;
-  margin: 0 auto;
-  padding: 0;
-  border-radius: 4px;
-  border: 0px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  background: var(--button-bcg);
-  color: var(--button-text-color);
-  transition: background-color 250ms var(--default-transition);
-}
-.button:hover, .subscribe__button:hover, .form-button:hover, .button:focus, .subscribe__button:focus, .form-button:focus {
-  background-color: var(--button-hover);
 }
 
 .header {
@@ -220,11 +203,28 @@ img {
   fill: currentColor;
 }
 
-.logo {
-  font-family: "Raleway", sans-serif;
+.button, .subscribe__button, .form-button {
+  display: flex;
+  display: inline-block;
+  align-items: center;
+  width: 216px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 4px;
+  border: 0px;
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 26px;
-  color: var(--logo-web-color);
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  background: var(--button-bcg);
+  color: var(--button-text-color);
+  transition: background-color 250ms var(--default-transition);
+}
+.button:hover, .subscribe__button:hover, .form-button:hover, .button:focus, .subscribe__button:focus, .form-button:focus {
+  background-color: var(--button-hover);
 }
 
 /* .hero .button,
