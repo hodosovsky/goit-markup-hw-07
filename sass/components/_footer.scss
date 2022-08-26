@@ -48,7 +48,7 @@
   }
 }
 
-.join-network__link {
+.social-network__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--button-text-color);
   fill: var(--button-text-color);
@@ -67,14 +67,14 @@
 
 .subscribe {
   flex-grow: 2;
+  margin-left: 93px;
 
-  .subsctibe__container {
+  .subsctibe__wrap {
     display: flex;
     align-items: flex-end;
   }
 
   &__label {
-    margin-left: 93px;
     display: flex;
     flex-direction: column;
   }

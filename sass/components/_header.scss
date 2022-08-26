@@ -14,7 +14,7 @@
 }
 .header__logo {
   @extend %link;
-    @extend %logo;
+  @extend %logo;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -22,14 +22,14 @@
   color: var(--studio-header);
 }
 
-.header-navigation {
+.navigation-wrap {
   display: flex;
+}
 
-  &__list {
-    @extend %list;
-    display: flex;
-    margin-left: 92px;
-  }
+.navigation {
+  @extend %list;
+  display: flex;
+  margin-left: 92px;
 
   &__item + &__item {
     margin-left: 50px;
@@ -61,11 +61,11 @@
   }
 }
 
-.header-navigation__link--current {
+.navigation__link--current {
   position: relative;
 }
 
-.header-navigation__link--current::after {
+.navigation__link--current::after {
   position: absolute;
   content: '';
   bottom: -1px;
@@ -76,7 +76,7 @@
   border-radius: 2px;
 }
 
-.header-contacts {
+.contacts {
   @extend %list;
   display: flex;
   align-items: center;

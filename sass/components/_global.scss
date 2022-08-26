@@ -36,11 +36,16 @@ img {
   margin: -1px;
 }
 
-.section__title {
+.title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.flex {
+  display: flex;
+  @extend %list;
 }

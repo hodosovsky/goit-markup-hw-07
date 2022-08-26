@@ -1,10 +1,10 @@
 .projects {
   padding-top: 0;
 
-  &__list {
-    @extend %list;
-    display: flex;
-  }
+  // &__list {
+  //   @extend %list;
+  //   @extend %flex;
+  // }
   &__overlay {
     position: relative;
     z-index: 1;

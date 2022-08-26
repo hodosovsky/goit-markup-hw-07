@@ -1,8 +1,8 @@
 .features {
-  &-list {
-    @extend %list;
-    display: flex;
-  }
+  // &-list {
+  //   @extend %list;
+  //   @extend %flex;
+  // }
 
   &-list__item {
     width: calc((100% - 90px) / 4);
