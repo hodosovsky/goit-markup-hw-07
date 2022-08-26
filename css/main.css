@@ -433,22 +433,16 @@ img {
 }
 .form-checkbox {
   appearance: none;
-  position: absolute;
-}
-.form-policy__label {
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .form-policy__text {
-  display: inline-block;
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
 }
 .form-policy__icon {
   display: inline-block;
+  position: relative;
+  top: 2px;
   width: 16px;
   height: 15px;
   margin-right: 7px;

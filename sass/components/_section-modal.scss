@@ -170,16 +170,18 @@
 
   &-checkbox {
     appearance: none;
-    position: absolute;
+    // position: absolute;
+    // position: relative;
   }
-  &-policy__label {
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  // &-policy__label {
+  //   display: inline-block;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
   &-policy__text {
-    display: inline-block;
+    // display: inline-block;
+
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -187,6 +189,8 @@
 
   &-policy__icon {
     display: inline-block;
+    position: relative;
+    top: 2px;
     width: 16px;
     height: 15px;
     margin-right: 7px;
